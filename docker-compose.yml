@@ -64,9 +64,9 @@ services:
       retries: 10
     restart: on-failure
   # Node App
-  # app:
-  #   build: .
-  #   container_name: kong-app
-  #   networks:
-  #     - kong-net
-  #   restart: on-failure
+  app:
+    build: .
+    container_name: kong-app
+    networks:
+      - kong-net
+    restart: on-failure
